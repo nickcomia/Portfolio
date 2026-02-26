@@ -87,7 +87,7 @@
     .profile-frame { width: 100%; aspect-ratio: 3/4; border-radius: 24px; border: 1.5px solid var(--border); overflow: hidden; background: var(--card-bg); display: flex; align-items: center; justify-content: center; position: relative; transition: border-color 0.3s, box-shadow 0.3s; animation: float 6s ease-in-out infinite; }
     .profile-frame:hover { border-color: var(--accent-dim); box-shadow: 0 0 50px rgba(56, 213, 247, 0.15); }
     .profile-frame img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
-    .profile-placeholder { display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--text-muted); padding: 20px; text-align: center; }
+    .profile-placeholder { display: flex; flex-direction: column; align-items: relative; gap: 12px; color: var(--text-muted); padding: 20px; text-align: center; }
     .profile-placeholder svg { opacity: 0.35; }
     .profile-placeholder p { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; line-height: 1.6; }
     .profile-deco { position: absolute; bottom: -16px; right: -16px; width: 64px; height: 64px; border: 1.5px solid rgba(56,213,247,0.25); border-radius: 14px; background: rgba(10, 22, 40, 0.85); backdrop-filter: blur(12px); display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
@@ -439,6 +439,50 @@
           </div>
         </div>
       </div>
+      <!-- CARD 1 -->
+      <div class="work-card reveal" data-category="web">
+        <div class="work-media">
+          <div class="media-slider" id="slider-1">
+            <div class="media-item"><div class="media-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><p>Screenshot 1</p></div></div>
+            <div class="media-item"><div class="media-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><p>Screenshot 2</p></div></div>
+          </div>
+          <button class="slider-btn prev" onclick="slide('slider-1',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="slider-btn next" onclick="slide('slider-1',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="slider-dots" id="dots-slider-1"></div>
+        </div>
+        <div class="work-info">
+          <div class="work-type">Website</div>
+          <h3 class="work-name">Project Title 1.2</h3>
+          <p class="work-desc">A brief description of what this project does, the problem it solves, and the impact it created.</p>
+          <div class="work-tags"><span class="work-tag">HTML</span><span class="work-tag">CSS</span><span class="work-tag">JavaScript</span></div>
+          <div class="work-links">
+            <a href="#" target="_blank" class="work-link-btn primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site</a>
+            <a href="#" target="_blank" class="work-link-btn ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 1 -->
+      <div class="work-card reveal" data-category="web">
+        <div class="work-media">
+          <div class="media-slider" id="slider-1">
+            <div class="media-item"><div class="media-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><p>Screenshot 1</p></div></div>
+            <div class="media-item"><div class="media-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><p>Screenshot 2</p></div></div>
+          </div>
+          <button class="slider-btn prev" onclick="slide('slider-1',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="slider-btn next" onclick="slide('slider-1',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="slider-dots" id="dots-slider-1"></div>
+        </div>
+        <div class="work-info">
+          <div class="work-type">Website</div>
+          <h3 class="work-name">Project Title 1.3</h3>
+          <p class="work-desc">A brief description of what this project does, the problem it solves, and the impact it created.</p>
+          <div class="work-tags"><span class="work-tag">HTML</span><span class="work-tag">CSS</span><span class="work-tag">JavaScript</span></div>
+          <div class="work-links">
+            <a href="#" target="_blank" class="work-link-btn primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site</a>
+            <a href="#" target="_blank" class="work-link-btn ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a>
+          </div>
+        </div>
+      </div>
       <!-- CARD 2 -->
       <div class="work-card reveal reveal-delay-1" data-category="system">
         <div class="work-media">
@@ -453,6 +497,50 @@
         <div class="work-info">
           <div class="work-type">System</div>
           <h3 class="work-name">Project Title 2.1</h3>
+          <p class="work-desc">A brief description of what this system does, who uses it, and the technologies involved.</p>
+          <div class="work-tags"><span class="work-tag">PHP</span><span class="work-tag">MySQL</span><span class="work-tag">Bootstrap</span></div>
+          <div class="work-links">
+            <a href="#" target="_blank" class="work-link-btn primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site</a>
+            <a href="#" target="_blank" class="work-link-btn ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 2 -->
+      <div class="work-card reveal reveal-delay-1" data-category="system">
+        <div class="work-media">
+          <div class="media-slider" id="slider-2">
+            <div class="media-item"><div class="media-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><p>Screenshot 1</p></div></div>
+            <div class="media-item"><div class="media-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><p>Screenshot 2</p></div></div>
+          </div>
+          <button class="slider-btn prev" onclick="slide('slider-2',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="slider-btn next" onclick="slide('slider-2',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="slider-dots" id="dots-slider-2"></div>
+        </div>
+        <div class="work-info">
+          <div class="work-type">System</div>
+          <h3 class="work-name">Project Title 2.2</h3>
+          <p class="work-desc">A brief description of what this system does, who uses it, and the technologies involved.</p>
+          <div class="work-tags"><span class="work-tag">PHP</span><span class="work-tag">MySQL</span><span class="work-tag">Bootstrap</span></div>
+          <div class="work-links">
+            <a href="#" target="_blank" class="work-link-btn primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site</a>
+            <a href="#" target="_blank" class="work-link-btn ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 2 -->
+      <div class="work-card reveal reveal-delay-1" data-category="system">
+        <div class="work-media">
+          <div class="media-slider" id="slider-2">
+            <div class="media-item"><div class="media-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><p>Screenshot 1</p></div></div>
+            <div class="media-item"><div class="media-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><p>Screenshot 2</p></div></div>
+          </div>
+          <button class="slider-btn prev" onclick="slide('slider-2',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="slider-btn next" onclick="slide('slider-2',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="slider-dots" id="dots-slider-2"></div>
+        </div>
+        <div class="work-info">
+          <div class="work-type">System</div>
+          <h3 class="work-name">Project Title 2.3</h3>
           <p class="work-desc">A brief description of what this system does, who uses it, and the technologies involved.</p>
           <div class="work-tags"><span class="work-tag">PHP</span><span class="work-tag">MySQL</span><span class="work-tag">Bootstrap</span></div>
           <div class="work-links">
@@ -481,6 +569,47 @@
           </div>
         </div>
       </div>
+ <!-- CARD 3 -->
+      <div class="work-card reveal reveal-delay-2" data-category="design">
+        <div class="work-media">
+          <div class="media-slider" id="slider-3">
+            <div class="media-item"><div class="media-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><p>Design Preview</p></div></div>
+          </div>
+          <button class="slider-btn prev" onclick="slide('slider-3',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="slider-btn next" onclick="slide('slider-3',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="slider-dots" id="dots-slider-3"></div>
+        </div>
+        <div class="work-info">
+          <div class="work-type">UI/UX Design</div>
+          <h3 class="work-name">Project Title 3.2</h3>
+          <p class="work-desc">A UI/UX design project — describe the design challenges, tools used, and the outcome.</p>
+          <div class="work-tags"><span class="work-tag">Figma</span><span class="work-tag">Prototyping</span><span class="work-tag">User Research</span></div>
+          <div class="work-links">
+            <a href="#" target="_blank" class="work-link-btn primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>View Design</a>
+          </div>
+        </div>
+      </div>
+ <!-- CARD 3 -->
+      <div class="work-card reveal reveal-delay-2" data-category="design">
+        <div class="work-media">
+          <div class="media-slider" id="slider-3">
+            <div class="media-item"><div class="media-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><p>Design Preview</p></div></div>
+          </div>
+          <button class="slider-btn prev" onclick="slide('slider-3',-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="slider-btn next" onclick="slide('slider-3',1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="slider-dots" id="dots-slider-3"></div>
+        </div>
+        <div class="work-info">
+          <div class="work-type">UI/UX Design</div>
+          <h3 class="work-name">Project Title 3.3</h3>
+          <p class="work-desc">A UI/UX design project — describe the design challenges, tools used, and the outcome.</p>
+          <div class="work-tags"><span class="work-tag">Figma</span><span class="work-tag">Prototyping</span><span class="work-tag">User Research</span></div>
+          <div class="work-links">
+            <a href="#" target="_blank" class="work-link-btn primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>View Design</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
