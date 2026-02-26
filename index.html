@@ -69,7 +69,7 @@
     .hero-bg-orb { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; }
     .orb-1 { width: 600px; height: 600px; background: radial-gradient(circle, rgba(34, 85, 164, 0.4) 0%, transparent 70%); top: -100px; right: -100px; }
     .orb-2 { width: 400px; height: 400px; background: radial-gradient(circle, rgba(56, 213, 247, 0.15) 0%, transparent 70%); bottom: 50px; left: 10%; }
-    .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 340px; gap: 60px; align-items: center; width: 100%; }
+    .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 340px; gap: 60px; align-items: relative; width: 100%; }
     .hero-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); border: 1px solid rgba(56,213,247,0.3); padding: 6px 14px; border-radius: 100px; margin-bottom: 28px; animation: fadeUp 0.8s 0.1s both; }
     .hero-tag span { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); display: inline-block; animation: pulse 2s infinite; }
     .hero-title { font-family: 'Syne', sans-serif; font-size: clamp(40px, 5.5vw, 80px); font-weight: 800; line-height: 1.0; letter-spacing: -2px; margin-bottom: 24px; animation: fadeUp 0.8s 0.2s both; }
@@ -82,7 +82,7 @@
     .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(56, 213, 247, 0.4); }
     .btn-secondary { display: inline-flex; align-items: center; gap: 10px; font-family: 'Syne', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.5px; color: var(--text-primary); background: transparent; border: 1.5px solid var(--border-hover); padding: 14px 32px; border-radius: 10px; transition: border-color 0.3s, background 0.3s, transform 0.2s; }
     .btn-secondary:hover { border-color: var(--accent); background: rgba(56, 213, 247, 0.06); transform: translateY(-3px); }
-    .hero-visual { position: relative; z-index: 1; display: flex; justify-content: center; animation: fadeLeft 1s 0.3s both; }
+    .hero-visual { position: relative; z-index: 1; display: flex; justify-content: relative; animation: fadeLeft 1s 0.3s both; }
     .profile-frame-wrap { position: relative; width: 100%; max-width: 300px; }
     .profile-frame { width: 100%; aspect-ratio: 3/4; border-radius: 24px; border: 1.5px solid var(--border); overflow: hidden; background: var(--card-bg); display: flex; align-items:relative; justify-content: center; position: relative; transition: border-color 0.3s, box-shadow 0.3s; animation: float 6s ease-in-out infinite; }
     .profile-frame:hover { border-color: var(--accent-dim); box-shadow: 0 0 50px rgba(56, 213, 247, 0.15); }
